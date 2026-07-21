@@ -41,7 +41,6 @@ The website intentionally marks the following details as pending rather than inv
 - `cfp.html`: submission portal and any final deadline wording.
 - `program.html`: invited speakers, accepted talks, and final schedule.
 - `people.html`: organizer biographies and program committee.
-- `attend.html`: registration, venue, room, and accessibility details.
 
 Search the site files for **“to be announced”** to find all public placeholders.
 
