@@ -40,20 +40,27 @@ The website intentionally marks the following details as pending rather than inv
 - `assets/config.js`: last-updated date and frequently changing status values.
 - `cfp.html`: submission portal and any final deadline wording.
 - `program.html`: invited speakers, accepted talks, and final schedule.
-- `people.html`: organizer biographies and program committee.
+- `people.html`: organizer contacts, sponsorship information, and program committee updates.
 
 Search the site files for **“to be announced”** to find all public placeholders.
 
 ## Included files
 
-- Five public pages: Home, CFP, Program, People, Attend
+- Four public pages: Home, Call for Presentations, Program, and Organizers
 - Responsive mobile navigation
 - Print-friendly CFP
 - Calendar files for deadlines and the workshop date
 - Social sharing image and SVG favicon
 - A custom 404 page
-- `.nojekyll` for direct GitHub Pages hosting
+- A full Call for Sponsors on the Organizers page, with homepage and footer links
 
 ## Public-content note
 
 The source proposal contains tentative candidate names. This public draft does **not** present potential invited speakers or potential program committee members as confirmed. Add names only after consent and confirmation.
+
+
+## Sponsorship section
+
+The full Call for Sponsors is in `people.html#sponsors`. A compact notice appears on the Home page, and all page footers link to the section. The wording deliberately keeps sponsorship separate from review and technical-program decisions and promises no promotional benefit that has not been approved by ASIACRYPT 2026.
+
+See `SPONSORSHIP-CHANGES.md` for the exact changes in this revision.
