@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//WDSC 2026//Workshop//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:wdsc2026-workshop@wdsc2026
+DTSTAMP:20260721T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:WDSC 2026 — Workshop on Decentralized Secure Collaboration
+LOCATION:Hong Kong
+DESCRIPTION:Half-day non-archival workshop affiliated with ASIACRYPT 2026. Exact time and room to be announced.
+URL:https://asiacrypt.iacr.org/2026/
+END:VEVENT
+END:VCALENDAR

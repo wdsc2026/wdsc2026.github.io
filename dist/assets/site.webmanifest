@@ -1,0 +1,10 @@
+{
+  "name": "WDSC 2026",
+  "short_name": "WDSC 2026",
+  "description": "Workshop on Decentralized Secure Collaboration",
+  "start_url": "../index.html",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "icons": [{"src": "favicon.svg", "sizes": "any", "type": "image/svg+xml"}]
+}
