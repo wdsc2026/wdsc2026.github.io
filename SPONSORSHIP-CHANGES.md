@@ -18,8 +18,6 @@ For discoverability without creating a fifth page or another primary-navigation 
 
 - An invitation to academic institutions, research laboratories, foundations, and industry organizations.
 - A conditional description of possible participation support, subject to ASIACRYPT 2026 policies and organizer approval.
-- An academic-independence statement: sponsorship will not affect review, speakers, accepted presentations, or the technical program.
-- An acknowledgement-policy statement that avoids promising sponsored talks, advertisements, banners, merchandise, logos, or other unapproved benefits.
 - Contact instructions asking sponsors to contact any listed organizer with the subject line “WDSC 2026 Sponsorship”.
 
 ## Design changes

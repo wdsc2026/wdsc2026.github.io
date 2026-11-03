@@ -61,6 +61,6 @@ The source proposal contains tentative candidate names. This public draft does *
 
 ## Sponsorship section
 
-The full Call for Sponsors is in `people.html#sponsors`. A compact notice appears on the Home page, and all page footers link to the section. The wording deliberately keeps sponsorship separate from review and technical-program decisions and promises no promotional benefit that has not been approved by ASIACRYPT 2026.
+The full Call for Sponsors is in `people.html#sponsors`. A compact notice appears on the Home page, and all page footers link to the section. The section includes an invitation, possible uses of sponsorship, and organizer contact details.
 
 See `SPONSORSHIP-CHANGES.md` for the exact changes in this revision.
