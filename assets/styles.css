@@ -251,22 +251,25 @@ body.page-home { background: var(--paper); }
 .program-intro-copy p:last-child { margin-bottom: 0; }
 .schedule-table { border-top: 1px solid var(--line); }
 .schedule-row { display: grid; grid-template-columns: 180px 1fr; gap: 30px; padding: 24px 0; border-bottom: 1px solid var(--line); }
-.schedule-row > time, .schedule-head > div:first-child { color: var(--muted); font-size: .76rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+.schedule-row > time, .schedule-row > .talk-time, .schedule-head > div:first-child { color: var(--muted); font-size: .76rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
 .schedule-row > div { display: grid; grid-template-columns: minmax(240px, .8fr) 1.2fr; gap: 28px; align-items: baseline; }
 .schedule-row strong { font-size: .98rem; font-weight: 650; }
 .schedule-row span { color: var(--muted); font-size: .9rem; }
 .schedule-head { padding-top: 12px; padding-bottom: 12px; }
 .schedule-head > div { display: block; color: var(--muted); font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
-#lightning-talks { scroll-margin-top: 90px; }
-.schedule-details { min-width: 0; }
-.schedule-details summary { display: flex; align-items: center; gap: .65rem; cursor: pointer; list-style: none; }
+.schedule-details { scroll-margin-top: 90px; border-bottom: 1px solid var(--line); }
+.schedule-details .schedule-row { border-bottom: 0; }
+.schedule-details summary { cursor: pointer; list-style: none; }
 .schedule-details summary::-webkit-details-marker { display: none; }
-.schedule-details summary::after { content: ""; width: .5rem; height: .5rem; border: solid currentColor; border-width: 0 1.5px 1.5px 0; transform: translateY(-.12rem) rotate(45deg); }
-.schedule-details[open] summary::after { transform: translateY(.12rem) rotate(225deg); }
+.schedule-toggle { display: inline-flex; align-items: center; gap: .65rem; }
+.schedule-toggle::after { content: ""; width: .5rem; height: .5rem; border: solid currentColor; border-width: 0 1.5px 1.5px 0; transform: translateY(-.12rem) rotate(45deg); }
+.schedule-details[open] .schedule-toggle::after { transform: translateY(.12rem) rotate(225deg); }
 .schedule-details summary:hover strong, .talk-material { text-decoration: underline; text-underline-offset: .2em; }
-.schedule-details ol { margin: 12px 0 0; padding-inline-start: 1.3em; }
-.schedule-details li + li { margin-top: 12px; }
-.talk-time { margin-bottom: 2px; color: var(--muted); font-size: .8rem; font-weight: 650; font-variant-numeric: tabular-nums; }
+.schedule-details ol { list-style: none; margin: 0; padding: 0 0 24px; }
+.schedule-details li { padding-block: 0; }
+.schedule-details li + li { margin-top: 16px; }
+.schedule-details .talk-info { display: block; }
+.talk-time { white-space: nowrap; font-variant-numeric: tabular-nums; }
 .schedule-details h3 { font-size: 1rem; font-weight: 650; letter-spacing: normal; line-height: 1.45; }
 .talk-credit { margin: 2px 0 0; color: var(--muted); font-size: .9rem; line-height: 1.5; }
 .talk-credit b { margin-inline-end: .35em; font-weight: 650; }
