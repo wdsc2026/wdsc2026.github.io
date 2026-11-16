@@ -266,6 +266,7 @@ body.page-home { background: var(--paper); }
 .schedule-details summary:hover strong, .talk-material { text-decoration: underline; text-underline-offset: .2em; }
 .schedule-details ol { margin: 12px 0 0; padding-inline-start: 1.3em; }
 .schedule-details li + li { margin-top: 12px; }
+.talk-time { margin-bottom: 2px; color: var(--muted); font-size: .8rem; font-weight: 650; font-variant-numeric: tabular-nums; }
 .schedule-details h3 { font-size: 1rem; font-weight: 650; letter-spacing: normal; line-height: 1.45; }
 .talk-credit { margin: 2px 0 0; color: var(--muted); font-size: .9rem; line-height: 1.5; }
 .talk-credit b { margin-inline-end: .35em; font-weight: 650; }
