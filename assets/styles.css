@@ -257,6 +257,17 @@ body.page-home { background: var(--paper); }
 .schedule-row span { color: var(--muted); font-size: .9rem; }
 .schedule-head { padding-top: 12px; padding-bottom: 12px; }
 .schedule-head > div { display: block; color: var(--muted); font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+#lightning-talks { scroll-margin-top: 90px; }
+.schedule-details { min-width: 0; }
+.schedule-details summary { display: flex; align-items: center; gap: .65rem; cursor: pointer; list-style: none; }
+.schedule-details summary::-webkit-details-marker { display: none; }
+.schedule-details summary::after { content: ""; width: .5rem; height: .5rem; border: solid currentColor; border-width: 0 1.5px 1.5px 0; transform: translateY(-.12rem) rotate(45deg); }
+.schedule-details[open] summary::after { transform: translateY(.12rem) rotate(225deg); }
+.schedule-details summary:hover strong, .schedule-details a { text-decoration: underline; text-underline-offset: .2em; }
+.schedule-details ol { margin: 12px 0 0; padding-inline-start: 1.3em; }
+.schedule-details li + li { margin-top: 8px; }
+.presentation-document { max-width: 78ch; }
+.presentation-document h1 { margin: 24px 0; font-size: clamp(2rem, 5vw, 3.4rem); }
 
 /* Organizers and program committee */
 .contact-list { border-top: 1px solid var(--line); }
