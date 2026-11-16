@@ -263,9 +263,11 @@ body.page-home { background: var(--paper); }
 .schedule-details summary::-webkit-details-marker { display: none; }
 .schedule-details summary::after { content: ""; width: .5rem; height: .5rem; border: solid currentColor; border-width: 0 1.5px 1.5px 0; transform: translateY(-.12rem) rotate(45deg); }
 .schedule-details[open] summary::after { transform: translateY(.12rem) rotate(225deg); }
-.schedule-details summary:hover strong, .schedule-details a { text-decoration: underline; text-underline-offset: .2em; }
+.schedule-details summary:hover strong, .talk-material { text-decoration: underline; text-underline-offset: .2em; }
 .schedule-details ol { margin: 12px 0 0; padding-inline-start: 1.3em; }
-.schedule-details li + li { margin-top: 8px; }
+.schedule-details li + li { margin-top: 12px; }
+.schedule-details h3 { font-size: 1rem; font-weight: 650; letter-spacing: normal; line-height: 1.45; }
+.talk-material { display: inline-flex; align-items: center; gap: .4em; min-height: 28px; font-size: .9rem; }
 .presentation-document { max-width: 78ch; }
 .presentation-document h1 { margin: 24px 0; font-size: clamp(2rem, 5vw, 3.4rem); }
 
