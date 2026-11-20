@@ -3,9 +3,9 @@
 window.WDSC_SITE = {
   lastUpdated: "16 November 2026",
   submissionUrl: "https://easychair.org/conferences/?conf=wdsc20260",
-  registrationUrl: "",
+  registrationUrl: "https://asiacrypt.iacr.org/2026/registration.php",
   venueDisplay: "exact venue and room to be announced.",
   venueDisplayShort: "To be announced",
   workshopRoom: "Exact room to be announced",
-  registrationStatus: "To be announced"
+  registrationStatus: "Open"
 };
