@@ -50,25 +50,44 @@
   </div>
 </section>
 
-<section class="section program-intro">
-  <div class="container program-intro-copy">
-    <p>The program brings together invited talks, lightning talks, and a moderated discussion.</p>
-  </div>
-</section>
-
 <section class="section section-schedule">
   <div class="container">
-    <div class="section-intro section-intro-row">
-      <div><h2>Schedule</h2></div>
-      <a class="button button-small button-ghost-dark" href="assets/wdsc-2026-workshop.ics" download><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg> Add date</a>
-    </div>
     <div class="schedule-table schedule-simple">
       <div class="schedule-row schedule-head"><div>Time</div><div>Session</div></div>
       <div class="schedule-row"><time datetime="2026-12-07T09:00">09:00–09:10</time><div><strong>Opening remarks</strong></div></div>
-      <div class="schedule-row"><time datetime="2026-12-07T09:10">09:10–09:50</time><div><strong>Invited talk 1</strong></div></div>
-      <div class="schedule-row"><time datetime="2026-12-07T09:50">09:50–10:30</time><div><strong>Invited talk 2</strong></div></div>
+      <div class="schedule-row" id="invited-talk-1">
+        <time datetime="2026-12-07T09:10">09:10–09:50</time>
+        <span class="talk-info">
+          <strong>Invited talk 1</strong>
+          <span class="talk-credit"><b>Speaker</b> <a href="#speaker-ky-nguyen">Ky Nguyen</a> · Sorbonne Université</span>
+        </span>
+      </div>
+      <details class="schedule-details" id="invited-talk-2">
+        <summary class="schedule-row">
+          <time datetime="2026-12-07T09:50">09:50–10:30</time>
+          <span class="talk-info">
+            <strong class="schedule-toggle">Invited talk 2: Tulva: Practical Asynchronous Threshold FHE</strong>
+            <span class="talk-credit"><b>Speaker</b> <a href="#speaker-russell-lai">Russell W. F. Lai</a> · Aalto University</span>
+          </span>
+        </summary>
+        <div class="invited-talk-content">
+          <p>Fully homomorphic encryption (FHE) enables computation on encrypted data, but a single secret key creates a single point of failure. Tulva distributes decryption across a threshold of parties, allowing them to submit shares independently without coordination or simultaneous availability. It adds asynchronous threshold decryption to existing FHE schemes while largely preserving their ciphertexts. The construction relies on the standard LWE assumption and includes an open-source implementation evaluated for privacy-preserving Ethereum Virtual Machine applications.</p>
+          <a class="talk-material" href="https://eprint.iacr.org/2026/2485" target="_blank" rel="noopener" aria-label="Paper: Tulva: Practical Asynchronous Threshold FHE"><img src="assets/document.svg" alt="" width="16" height="16"> Paper</a>
+        </div>
+      </details>
       <div class="schedule-row"><time datetime="2026-12-07T10:30">10:30–11:00</time><div><strong>Coffee break </strong></div></div>
-      <div class="schedule-row"><time datetime="2026-12-07T11:00">11:00–11:40</time><div><strong>Invited talk 3</strong></div></div>
+      <details class="schedule-details" id="invited-talk-3">
+        <summary class="schedule-row">
+          <time datetime="2026-12-07T11:00">11:00–11:40</time>
+          <span class="talk-info">
+            <strong class="schedule-toggle">Invited talk 3: The AI Money, The Endgame: Introduction to Pearl Blockchain</strong>
+            <span class="talk-credit"><b>Speaker</b> <a href="#speaker-youlong-ding">Youlong Ding</a> · Hebrew University of Jerusalem</span>
+          </span>
+        </summary>
+        <div class="invited-talk-content">
+          <p>Cryptocurrency and AI are often seen as competing for GPU resources. Pearl blockchain offers an elegant way to reconcile the two by leveraging GPU computations for AI inference as proof of work to secure a blockchain. This talk provides a brief introduction to Pearl's Proof of Useful Work (PoUW) protocol.</p>
+        </div>
+      </details>
       <details class="schedule-details" id="lightning-talks">
         <summary class="schedule-row">
           <time datetime="2026-12-07T11:40">11:40–12:40</time>
@@ -140,10 +159,29 @@
     <div class="section-intro">
       <h2 id="invited-speakers-title">Invited Speakers</h2>
     </div>
-    <div class="contact-list">
-      <a href="https://youlongding.github.io/" target="_blank" rel="noopener"><strong>Youlong Ding</strong><span>Hebrew University of Jerusalem</span></a>
-      <a href="https://russell-lai.hk/" target="_blank" rel="noopener"><strong>Russell W. F. Lai</strong><span>Aalto University</span></a>
-      <a href="https://www.lip6.fr/Ky.Nguyen/" target="_blank" rel="noopener"><strong>Ky Nguyen</strong><span>Sorbonne Université</span></a>
+    <div class="speaker-list">
+      <article class="speaker-profile" id="speaker-youlong-ding" aria-labelledby="speaker-youlong-ding-name">
+        <header>
+          <h3 id="speaker-youlong-ding-name"><a href="https://youlongding.github.io/" target="_blank" rel="noopener">Youlong Ding</a></h3>
+          <p class="speaker-affiliation">Hebrew University of Jerusalem</p>
+        </header>
+        <p class="speaker-bio">Youlong Ding is a graduate student at the Hebrew University of Jerusalem. His current research interest lies in complexity, cryptography, and AI.</p>
+      </article>
+      <article class="speaker-profile" id="speaker-russell-lai" aria-labelledby="speaker-russell-lai-name">
+        <header>
+          <h3 id="speaker-russell-lai-name"><a href="https://russell-lai.hk/" target="_blank" rel="noopener">Russell W. F. Lai</a></h3>
+          <p class="speaker-affiliation">Aalto University</p>
+        </header>
+        <p class="speaker-bio">Russell W. F. Lai has been an Assistant Professor at the Department of Computer Science of Aalto University since July 2022, where he is part of the Aalto Crypto Group. Before joining Aalto, he obtained his PhD from Friedrich-Alexander University Erlangen-Nuremberg in 2022 (dissertation), and his MPhil and bachelor’s degrees from The Chinese University of Hong Kong.</p>
+      </article>
+      <article class="speaker-profile" id="speaker-ky-nguyen" aria-labelledby="speaker-ky-nguyen-name">
+        <header>
+          <h3 id="speaker-ky-nguyen-name"><a href="https://www.lip6.fr/Ky.Nguyen/" target="_blank" rel="noopener">Ky Nguyen (Nguyễn Ngọc Kỷ)</a></h3>
+          <p class="speaker-affiliation">Sorbonne Université</p>
+        </header>
+        <p class="speaker-bio">Ky Nguyen (Nguyễn Ngọc Kỷ) is an Associate Professor and a permanent member of the ALMASTY research team at Sorbonne University. He received his PhD from École Normale Supérieure in December 2024, under the supervision of David Pointcheval and Duong Hieu Phan. His research appears in CCS, CRYPTO, ASIACRYPT, PKC covering advanced public-key encryption and signatures, with a focus on removing trusted centralized point of failure, together with privacy-preserving techniques in computation and verification.</p>
+        <p class="speaker-bio">Ky Nguyen also co-chaired the recent IACR-VIASM Summer School on Cryptography 2026 in Hanoi, Vietnam, aiming to promote cryptographic research in Vietnam and neighboring countries.</p>
+      </article>
     </div>
   </div>
 </section>
