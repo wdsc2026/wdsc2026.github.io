@@ -55,13 +55,21 @@
     <div class="schedule-table schedule-simple">
       <div class="schedule-row schedule-head"><div>Time</div><div>Session</div></div>
       <div class="schedule-row"><time datetime="2026-12-07T09:00">09:00–09:10</time><div><strong>Opening remarks</strong></div></div>
-      <div class="schedule-row" id="invited-talk-1">
-        <time datetime="2026-12-07T09:10">09:10–09:50</time>
-        <span class="talk-info">
-          <strong>Invited talk 1</strong>
-          <span class="talk-credit"><b>Speaker</b> <a href="#speaker-ky-nguyen">Ky Nguyen</a> · Sorbonne Université</span>
-        </span>
-      </div>
+      <details class="schedule-details" id="invited-talk-1">
+        <summary class="schedule-row">
+          <time datetime="2026-12-07T09:10">09:10–09:50</time>
+          <span class="talk-info">
+            <strong class="schedule-toggle">Invited talk 1: Functional Encryption for Multiple Users, with Public Inputs and Strong Security</strong>
+            <span class="talk-credit"><b>Speaker</b> <a href="#speaker-ky-nguyen">Ky Nguyen</a> · Sorbonne Université</span>
+          </span>
+        </summary>
+        <div class="invited-talk-content">
+          <p>Functional Encryption (FE) is a powerful cryptographic primitive that allows for fine-grained computation over encrypted data. Notions of FE in the multi-user setting (Goldwasser et al. at Eurocrypt’14; Chotard et al. at Asiacrypt’18) such as Multi-Client FE (MCFE) and Multi-Input FE (MIFE) become the subjects of a plethora of works, which study on concrete function classes, improving security, finding practical privacy-preserving applications, and more. The challenge becomes more important when combined with access control, such as attribute-based encryption (ABE), which was actually not covered syntactically by the public-key FE nor semantically by the secret-key MCFE frameworks. On the other hand, as for complex primitives, many works have studied the admissibility of adversaries to ensure that the security model encompasses all real threats of attacks.</p>
+          <p>In this talk, we explore new points of view, stemming from the strong admissibility, that eventually encompass public-key FE and classical ABE, bridging the private setting of MCFE with the public setting of FE and ABE.</p>
+          <p>Moreover, focusing on security notion, current security notions so far only consider the chosen-plaintext attacks and stay vulnerable to active attacks. We look into the chosen-ciphertext security in multi-user FE, giving a robust notion that is accompanied by generic transformation under the above new viewpoints.</p>
+          <p>All above constructions can be instantiated for concrete and practical function classes under standard assumptions.</p>
+        </div>
+      </details>
       <details class="schedule-details" id="invited-talk-2">
         <summary class="schedule-row">
           <time datetime="2026-12-07T09:50">09:50–10:30</time>
@@ -215,7 +223,7 @@
     </div>
   </div>
   <div class="container footer-bottom">
-    <p>© 2026 WDSC organizers. Last updated <span data-site-text="lastUpdated">16 November 2026</span>.</p>
+    <p>© 2026 WDSC organizers. Last updated <span data-site-text="lastUpdated">23 November 2026</span>.</p>
     <p class="footer-note">No proceedings. No tracking cookies.</p>
   </div>
 </footer>
